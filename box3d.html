@@ -1,0 +1,305 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&amp;display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>vanilla JavaScript, HTML canvas, CSS experiments</title>
+
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+
+
+
+
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+
+    <link rel="stylesheet" id="bootstrap-style-css" href="css/bootstrap.min.css?ver=5.4.4" type="text/css" media="all">
+
+
+    <style type="text/css">
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div id="primary" class="site-content">
+            <div id="content" role="main">
+
+                <div id="news_body">
+                    <!-- Added by Post/Page specific custom CSS plugin, thank you for using! -->
+                    <style type="text/css">
+                        .final {
+                            position: relative;
+                            margin: 50px auto;
+                            width: 300px;
+                            height: 260px;
+                            display: grid;
+                            grid-template-columns: auto auto auto;
+                            grid-template-rows: auto auto auto;
+                            grid-gap: 20px;
+                            border-radius: 10px;
+                            padding: 30px;
+                            border: 1px solid black;
+                        }
+
+                        .icon_front {
+                            font-size: 25px;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            color: white;
+                        }
+
+                        .icon_down {
+                            font-size: 30px;
+                            position: absolute;
+                            bottom: 0px;
+                            left: 50%;
+                            transform: translate(-50%, 0);
+                            color: black;
+                        }
+
+                        .scene:hover .icon_down {
+                            transform: translate(-50%, 0) rotateY(360deg);
+                            transition: .3s .3s;
+                        }
+
+                        .cube {
+                            transform: translateY(0) translateZ(-100px) rotateX(-20deg) rotateY(20deg);
+                        }
+
+                        .scene {
+                            width: 50px;
+                            height: 50px;
+                            perspective: 500px;
+                            margin-left: 8px;
+                        }
+
+                        .cube {
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            transform-style: preserve-3d;
+                            transition: transform .3s ease-in;
+                        }
+
+                        .cube_shadow {
+                            display: block;
+                            position: absolute;
+                            width: 50px;
+                            height: 40px;
+                            filter: blur(10px);
+                            bottom: -10px;
+                            left: 0;
+                            background-color: black;
+                            transition: .3s ease-in;
+                        }
+
+                        .scene:hover .cube_shadow {
+
+                            width: 60px;
+                            height: 10px;
+                            filter: blur(15px);
+                            bottom: 0px;
+                            left: 10px;
+                        }
+
+                        .cube__face {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            background-color: #9c0c0c;
+                            opacity: 1;
+                            border: 1px solid black;
+                        }
+
+                        .cube__face--front {
+                            transform: rotateY(0deg) translateZ(25px);
+                        }
+
+                        .cube__face--right {
+                            transform: rotateY(90deg) translateZ(25px);
+                            background-color: #992b2b;
+                        }
+
+                        .cube__face--back {
+                            transform: rotateY(180deg) translateZ(25px);
+                            background-color: #520303;
+                        }
+
+                        .cube__face--left {
+                            transform: rotateY(-90deg) translateZ(25px);
+                            background-color: #e63737;
+                        }
+
+                        .cube__face--top {
+                            transform: rotateX(90deg) translateZ(25px);
+                            background-color: #c21f1f;
+                        }
+
+                        .scene:hover .cube {
+                            transform: translateY(-40px) translateZ(-100px) rotateX(30deg) rotateY(30deg);
+                        }
+                    </style>
+                    <div>
+                        <h2>Animated 3D box with CSS.</h2>
+                    </div>
+
+
+
+
+                    <div class="final">
+                        <div class="scene">
+                            <span class="cube_shadow"></span>
+                            <i class="fab fa-html5 icon_down"></i>
+                            <div class="cube">
+                                <div class="cube__face cube__face--front"><i class="fab fa-html5 icon_front"></i></div>
+                                <div class="cube__face cube__face--back"></div>
+                                <div class="cube__face cube__face--right"></div>
+                                <div class="cube__face cube__face--left"></div>
+                                <div class="cube__face cube__face--top"></div>
+                            </div>
+                        </div>
+                        <div class="scene">
+                            <span class="cube_shadow"></span>
+                            <i class="fab fa-css3-alt icon_down"></i>
+                            <div class="cube">
+                                <div class="cube__face cube__face--front"><i class="fab fa-css3-alt icon_front"></i>
+                                </div>
+                                <div class="cube__face cube__face--back"></div>
+                                <div class="cube__face cube__face--right"></div>
+                                <div class="cube__face cube__face--left"></div>
+                                <div class="cube__face cube__face--top"></div>
+                            </div>
+                        </div>
+                        <div class="scene">
+                            <span class="cube_shadow"></span>
+                            <i class="fab fa-js icon_down"></i>
+                            <div class="cube">
+                                <div class="cube__face cube__face--front"><i class="fab fa-js icon_front"></i></div>
+                                <div class="cube__face cube__face--back"></div>
+                                <div class="cube__face cube__face--right"></div>
+                                <div class="cube__face cube__face--left"></div>
+                                <div class="cube__face cube__face--top"></div>
+                            </div>
+                        </div>
+                        <div class="scene">
+                            <span class="cube_shadow"></span>
+                            <i class="fab fa-react icon_down"></i>
+                            <div class="cube">
+                                <div class="cube__face cube__face--front"><i class="fab fa-react icon_front"></i></div>
+                                <div class="cube__face cube__face--back"></div>
+                                <div class="cube__face cube__face--right"></div>
+                                <div class="cube__face cube__face--left"></div>
+                                <div class="cube__face cube__face--top"></div>
+                            </div>
+                        </div>
+                        <div class="scene">
+                            <span class="cube_shadow"></span>
+                            <i class="fab fa-bootstrap icon_down"></i>
+                            <div class="cube">
+                                <div class="cube__face cube__face--front"><i class="fab fa-bootstrap icon_front"></i>
+                                </div>
+                                <div class="cube__face cube__face--back"></div>
+                                <div class="cube__face cube__face--right"></div>
+                                <div class="cube__face cube__face--left"></div>
+                                <div class="cube__face cube__face--top"></div>
+                            </div>
+                        </div>
+                        <div class="scene">
+                            <span class="cube_shadow"></span>
+                            <i class="fas fa-database icon_down"></i>
+                            <div class="cube">
+                                <div class="cube__face cube__face--front"><i class="fas fa-database icon_front"></i>
+                                </div>
+                                <div class="cube__face cube__face--back"></div>
+                                <div class="cube__face cube__face--right"></div>
+                                <div class="cube__face cube__face--left"></div>
+                                <div class="cube__face cube__face--top"></div>
+                            </div>
+                        </div>
+                        <div class="scene">
+                            <span class="cube_shadow"></span>
+                            <i class="fab fa-windows icon_down"></i>
+                            <div class="cube">
+                                <div class="cube__face cube__face--front"><i class="fab fa-windows icon_front"></i>
+                                </div>
+                                <div class="cube__face cube__face--back"></div>
+                                <div class="cube__face cube__face--right"></div>
+                                <div class="cube__face cube__face--left"></div>
+                                <div class="cube__face cube__face--top"></div>
+                            </div>
+                        </div>
+                        <div class="scene">
+                            <span class="cube_shadow"></span>
+                            <i class="fab fa-wordpress icon_down"></i>
+                            <div class="cube">
+                                <div class="cube__face cube__face--front"><i class="fab fa-wordpress icon_front"></i>
+                                </div>
+                                <div class="cube__face cube__face--back"></div>
+                                <div class="cube__face cube__face--right"></div>
+                                <div class="cube__face cube__face--left"></div>
+                                <div class="cube__face cube__face--top"></div>
+                            </div>
+                        </div>
+                        <div class="scene">
+                            <span class="cube_shadow"></span>
+                            <i class="fab fa-youtube icon_down"></i>
+                            <div class="cube">
+                                <div class="cube__face cube__face--front"><i class="fab fa-youtube icon_front"></i>
+                                </div>
+                                <div class="cube__face cube__face--back"></div>
+                                <div class="cube__face cube__face--right"></div>
+                                <div class="cube__face cube__face--left"></div>
+                                <div class="cube__face cube__face--top"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <footer class="footer row">
+
+                        <div class="footer_widget_area col-sm-12 col-md-12 col-lg-5">
+
+                        </div>
+                        <p class="footer_tagline">created by Renato Lucena 2021</p>
+                    </footer>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <script src="js/animations.js"></script>
+
+
+</body>
+
+</html>

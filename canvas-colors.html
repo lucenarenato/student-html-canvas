@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Colors</title>
+    <link href="css/main.css" rel="stylesheet">
+    <!-- <link href="css/css/index.css" rel="stylesheet"> -->
+    
+</head>
+<body>
+    <div class="container">
+        <div class="markdown">
+            <h1 id="canvas-colors">Canvas Colors</h1>
+            <p class="lead">Our color palette helps enhance the visual hierarchy for each page. There are 27 sets of hues with 6 shades in each hue set.</p>
+            <div data-component="ColorGrid">
+               <div class="color-grid">
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(222, 46, 33); color: white;">
+                        <h5 class="color-name">Cinnamon</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(255, 239, 238);">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ffefee</span><input type="text" readonly="" value="#ffefee"></li>
+                        <li class="" style="background: rgb(252, 201, 197);">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#fcc9c5</span><input type="text" readonly="" value="#fcc9c5"></li>
+                        <li class="" style="background: rgb(255, 134, 125);">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ff867d</span><input type="text" readonly="" value="#ff867d"></li>
+                        <li class="" style="background: rgb(255, 83, 71); color: white;">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ff5347</span><input type="text" readonly="" value="#ff5347"></li>
+                        <li class="" style="background: rgb(222, 46, 33); color: white;">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#de2e21</span><input type="text" readonly="" value="#de2e21"></li>
+                        <li class="" style="background: rgb(163, 27, 18); color: white;">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#a31b12</span><input type="text" readonly="" value="#a31b12"></li>
+                     </ul>
+                  </div>
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(222, 71, 33); color: white;">
+                        <h5 class="color-name">Peach</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(255, 243, 240);">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#fff3f0</span><input type="text" readonly="" value="#fff3f0"></li>
+                        <li class="" style="background: rgb(255, 194, 179);">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ffc2b3</span><input type="text" readonly="" value="#ffc2b3"></li>
+                        <li class="" style="background: rgb(255, 149, 122);">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ff957a</span><input type="text" readonly="" value="#ff957a"></li>
+                        <li class="" style="background: rgb(255, 100, 61); color: white;">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ff643d</span><input type="text" readonly="" value="#ff643d"></li>
+                        <li class="" style="background: rgb(222, 71, 33); color: white;">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#de4721</span><input type="text" readonly="" value="#de4721"></li>
+                        <li class="" style="background: rgb(181, 52, 19); color: white;">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#b53413</span><input type="text" readonly="" value="#b53413"></li>
+                     </ul>
+                  </div>
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(224, 75, 0); color: white;">
+                        <h5 class="color-name">Chili Mango</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(255, 230, 217);">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ffe6d9</span><input type="text" readonly="" value="#ffe6d9"></li>
+                        <li class="" style="background: rgb(255, 199, 171);">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ffc7ab</span><input type="text" readonly="" value="#ffc7ab"></li>
+                        <li class="" style="background: rgb(255, 155, 105);">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ff9b69</span><input type="text" readonly="" value="#ff9b69"></li>
+                        <li class="" style="background: rgb(255, 103, 27); color: white;">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ff671b</span><input type="text" readonly="" value="#ff671b"></li>
+                        <li class="" style="background: rgb(224, 75, 0); color: white;">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#e04b00</span><input type="text" readonly="" value="#e04b00"></li>
+                        <li class="" style="background: rgb(163, 54, 0); color: white;">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#a33600</span><input type="text" readonly="" value="#a33600"></li>
+                     </ul>
+                  </div>
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(243, 139, 0);">
+                        <h5 class="color-name">Cantaloupe</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(255, 238, 217);">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ffeed9</span><input type="text" readonly="" value="#ffeed9"></li>
+                        <li class="" style="background: rgb(252, 212, 159);">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#fcd49f</span><input type="text" readonly="" value="#fcd49f"></li>
+                        <li class="" style="background: rgb(255, 188, 99);">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ffbc63</span><input type="text" readonly="" value="#ffbc63"></li>
+                        <li class="" style="background: rgb(255, 161, 38);">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ffa126</span><input type="text" readonly="" value="#ffa126"></li>
+                        <li class="" style="background: rgb(243, 139, 0);">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#f38b00</span><input type="text" readonly="" value="#f38b00"></li>
+                        <li class="" style="background: rgb(192, 108, 0); color: white;">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#c06c00</span><input type="text" readonly="" value="#c06c00"></li>
+                     </ul>
+                  </div>
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(235, 180, 0);">
+                        <h5 class="color-name">Sour Lemon</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(255, 249, 230);">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#fff9e6</span><input type="text" readonly="" value="#fff9e6"></li>
+                        <li class="" style="background: rgb(255, 236, 171);">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ffecab</span><input type="text" readonly="" value="#ffecab"></li>
+                        <li class="" style="background: rgb(255, 218, 97);">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ffda61</span><input type="text" readonly="" value="#ffda61"></li>
+                        <li class="" style="background: rgb(255, 198, 41);">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ffc629</span><input type="text" readonly="" value="#ffc629"></li>
+                        <li class="" style="background: rgb(235, 180, 0);">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ebb400</span><input type="text" readonly="" value="#ebb400"></li>
+                        <li class="" style="background: rgb(189, 145, 0); color: white;">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#bd9100</span><input type="text" readonly="" value="#bd9100"></li>
+                     </ul>
+                  </div>
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(142, 166, 24); color: white;">
+                        <h5 class="color-name">Juicy Pear</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(247, 250, 230);">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#f7fae6</span><input type="text" readonly="" value="#f7fae6"></li>
+                        <li class="" style="background: rgb(226, 243, 145);">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#e2f391</span><input type="text" readonly="" value="#e2f391"></li>
+                        <li class="" style="background: rgb(196, 222, 64);">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#c4de40</span><input type="text" readonly="" value="#c4de40"></li>
+                        <li class="" style="background: rgb(168, 194, 36);">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#a8c224</span><input type="text" readonly="" value="#a8c224"></li>
+                        <li class="" style="background: rgb(142, 166, 24); color: white;">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#8ea618</span><input type="text" readonly="" value="#8ea618"></li>
+                        <li class="" style="background: rgb(104, 120, 24); color: white;">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#687818</span><input type="text" readonly="" value="#687818"></li>
+                     </ul>
+                  </div>
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(96, 153, 21); color: white;">
+                        <h5 class="color-name">Kiwi</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(236, 252, 215);">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ecfcd7</span><input type="text" readonly="" value="#ecfcd7"></li>
+                        <li class="" style="background: rgb(202, 245, 147);">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#caf593</span><input type="text" readonly="" value="#caf593"></li>
+                        <li class="" style="background: rgb(167, 224, 92);">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#a7e05c</span><input type="text" readonly="" value="#a7e05c"></li>
+                        <li class="" style="background: rgb(119, 188, 31); color: white;">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#77bc1f</span><input type="text" readonly="" value="#77bc1f"></li>
+                        <li class="" style="background: rgb(96, 153, 21); color: white;">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#609915</span><input type="text" readonly="" value="#609915"></li>
+                        <li class="" style="background: rgb(83, 120, 36); color: white;">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#537824</span><input type="text" readonly="" value="#537824"></li>
+                     </ul>
+                  </div>
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(49, 156, 76); color: white;">
+                        <h5 class="color-name">Green Apple</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(235, 255, 240);">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ebfff0</span><input type="text" readonly="" value="#ebfff0"></li>
+                        <li class="" style="background: rgb(172, 245, 190);">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#acf5be</span><input type="text" readonly="" value="#acf5be"></li>
+                        <li class="" style="background: rgb(95, 227, 128);">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#5fe380</span><input type="text" readonly="" value="#5fe380"></li>
+                        <li class="" style="background: rgb(67, 196, 99); color: white;">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#43c463</span><input type="text" readonly="" value="#43c463"></li>
+                        <li class="" style="background: rgb(49, 156, 76); color: white;">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#319c4c</span><input type="text" readonly="" value="#319c4c"></li>
+                        <li class="" style="background: rgb(33, 122, 55); color: white;">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#217a37</span><input type="text" readonly="" value="#217a37"></li>
+                     </ul>
+                  </div>
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(12, 122, 91); color: white;">
+                        <h5 class="color-name">Watermelon</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(235, 253, 248);">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ebfdf8</span><input type="text" readonly="" value="#ebfdf8"></li>
+                        <li class="" style="background: rgb(183, 237, 222);">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#b7edde</span><input type="text" readonly="" value="#b7edde"></li>
+                        <li class="" style="background: rgb(101, 204, 175);">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#65ccaf</span><input type="text" readonly="" value="#65ccaf"></li>
+                        <li class="" style="background: rgb(18, 166, 124); color: white;">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#12a67c</span><input type="text" readonly="" value="#12a67c"></li>
+                        <li class="" style="background: rgb(12, 122, 91); color: white;">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#0c7a5b</span><input type="text" readonly="" value="#0c7a5b"></li>
+                        <li class="" style="background: rgb(0, 87, 62); color: white;">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#00573e</span><input type="text" readonly="" value="#00573e"></li>
+                     </ul>
+                  </div>
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(26, 129, 140); color: white;">
+                        <h5 class="color-name">Jewel</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(235, 253, 255);">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ebfdff</span><input type="text" readonly="" value="#ebfdff"></li>
+                        <li class="" style="background: rgb(172, 236, 243);">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#acecf3</span><input type="text" readonly="" value="#acecf3"></li>
+                        <li class="" style="background: rgb(68, 200, 215);">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#44c8d7</span><input type="text" readonly="" value="#44c8d7"></li>
+                        <li class="" style="background: rgb(30, 164, 179); color: white;">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#1ea4b3</span><input type="text" readonly="" value="#1ea4b3"></li>
+                        <li class="" style="background: rgb(26, 129, 140); color: white;">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#1a818c</span><input type="text" readonly="" value="#1a818c"></li>
+                        <li class="" style="background: rgb(21, 105, 115); color: white;">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#156973</span><input type="text" readonly="" value="#156973"></li>
+                     </ul>
+                  </div>
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(2, 113, 161); color: white;">
+                        <h5 class="color-name">Toothpaste</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(215, 241, 252);">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#d7f1fc</span><input type="text" readonly="" value="#d7f1fc"></li>
+                        <li class="" style="background: rgb(153, 224, 255);">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#99e0ff</span><input type="text" readonly="" value="#99e0ff"></li>
+                        <li class="" style="background: rgb(64, 180, 229);">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#40b4e5</span><input type="text" readonly="" value="#40b4e5"></li>
+                        <li class="" style="background: rgb(24, 148, 201); color: white;">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#1894c9</span><input type="text" readonly="" value="#1894c9"></li>
+                        <li class="" style="background: rgb(2, 113, 161); color: white;">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#0271a1</span><input type="text" readonly="" value="#0271a1"></li>
+                        <li class="" style="background: rgb(0, 91, 130); color: white;">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#005b82</span><input type="text" readonly="" value="#005b82"></li>
+                     </ul>
+                  </div>
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(0, 92, 185); color: white;">
+                        <h5 class="color-name">Blueberry</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(215, 234, 252);">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#d7eafc</span><input type="text" readonly="" value="#d7eafc"></li>
+                        <li class="" style="background: rgb(166, 210, 255);">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#a6d2ff</span><input type="text" readonly="" value="#a6d2ff"></li>
+                        <li class="" style="background: rgb(64, 160, 255); color: white;">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#40a0ff</span><input type="text" readonly="" value="#40a0ff"></li>
+                        <li class="" style="background: rgb(8, 117, 225); color: white;">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#0875e1</span><input type="text" readonly="" value="#0875e1"></li>
+                        <li class="" style="background: rgb(0, 92, 185); color: white;">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#005cb9</span><input type="text" readonly="" value="#005cb9"></li>
+                        <li class="" style="background: rgb(0, 67, 135); color: white;">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#004387</span><input type="text" readonly="" value="#004387"></li>
+                     </ul>
+                  </div>
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(49, 102, 171); color: white;">
+                        <h5 class="color-name">Plum</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(230, 241, 255);">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#e6f1ff</span><input type="text" readonly="" value="#e6f1ff"></li>
+                        <li class="" style="background: rgb(166, 205, 255);">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#a6cdff</span><input type="text" readonly="" value="#a6cdff"></li>
+                        <li class="" style="background: rgb(82, 155, 250); color: white;">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#529bfa</span><input type="text" readonly="" value="#529bfa"></li>
+                        <li class="" style="background: rgb(56, 129, 225); color: white;">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#3881e1</span><input type="text" readonly="" value="#3881e1"></li>
+                        <li class="" style="background: rgb(49, 102, 171); color: white;">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#3166ab</span><input type="text" readonly="" value="#3166ab"></li>
+                        <li class="" style="background: rgb(38, 74, 122); color: white;">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#264a7a</span><input type="text" readonly="" value="#264a7a"></li>
+                     </ul>
+                  </div>
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(75, 94, 179); color: white;">
+                        <h5 class="color-name">Berry Smoothie</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(232, 237, 255);">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#e8edff</span><input type="text" readonly="" value="#e8edff"></li>
+                        <li class="" style="background: rgb(194, 207, 255);">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#c2cfff</span><input type="text" readonly="" value="#c2cfff"></li>
+                        <li class="" style="background: rgb(120, 145, 255);">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#7891ff</span><input type="text" readonly="" value="#7891ff"></li>
+                        <li class="" style="background: rgb(94, 119, 230); color: white;">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#5e77e6</span><input type="text" readonly="" value="#5e77e6"></li>
+                        <li class="" style="background: rgb(75, 94, 179); color: white;">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#4b5eb3</span><input type="text" readonly="" value="#4b5eb3"></li>
+                        <li class="" style="background: rgb(59, 73, 135); color: white;">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#3b4987</span><input type="text" readonly="" value="#3b4987"></li>
+                     </ul>
+                  </div>
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(65, 63, 204); color: white;">
+                        <h5 class="color-name">Blackberry</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(240, 240, 255);">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#f0f0ff</span><input type="text" readonly="" value="#f0f0ff"></li>
+                        <li class="" style="background: rgb(195, 194, 255);">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#c3c2ff</span><input type="text" readonly="" value="#c3c2ff"></li>
+                        <li class="" style="background: rgb(132, 131, 230); color: white;">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#8483e6</span><input type="text" readonly="" value="#8483e6"></li>
+                        <li class="" style="background: rgb(92, 89, 230); color: white;">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#5c59e6</span><input type="text" readonly="" value="#5c59e6"></li>
+                        <li class="" style="background: rgb(65, 63, 204); color: white;">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#413fcc</span><input type="text" readonly="" value="#413fcc"></li>
+                        <li class="" style="background: rgb(46, 45, 145); color: white;">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#2e2d91</span><input type="text" readonly="" value="#2e2d91"></li>
+                     </ul>
+                  </div>
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(99, 69, 161); color: white;">
+                        <h5 class="color-name">Island Punch</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(245, 240, 255);">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#f5f0ff</span><input type="text" readonly="" value="#f5f0ff"></li>
+                        <li class="" style="background: rgb(210, 190, 250);">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#d2befa</span><input type="text" readonly="" value="#d2befa"></li>
+                        <li class="" style="background: rgb(168, 138, 230);">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#a88ae6</span><input type="text" readonly="" value="#a88ae6"></li>
+                        <li class="" style="background: rgb(134, 96, 209); color: white;">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#8660d1</span><input type="text" readonly="" value="#8660d1"></li>
+                        <li class="" style="background: rgb(99, 69, 161); color: white;">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#6345a1</span><input type="text" readonly="" value="#6345a1"></li>
+                        <li class="" style="background: rgb(80, 56, 130); color: white;">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#503882</span><input type="text" readonly="" value="#503882"></li>
+                     </ul>
+                  </div>
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(151, 73, 158); color: white;">
+                        <h5 class="color-name">Grape Soda</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(254, 235, 255);">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#feebff</span><input type="text" readonly="" value="#feebff"></li>
+                        <li class="" style="background: rgb(250, 192, 255);">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#fac0ff</span><input type="text" readonly="" value="#fac0ff"></li>
+                        <li class="" style="background: rgb(222, 138, 230);">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#de8ae6</span><input type="text" readonly="" value="#de8ae6"></li>
+                        <li class="" style="background: rgb(200, 96, 209); color: white;">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#c860d1</span><input type="text" readonly="" value="#c860d1"></li>
+                        <li class="" style="background: rgb(151, 73, 158); color: white;">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#97499e</span><input type="text" readonly="" value="#97499e"></li>
+                        <li class="" style="background: rgb(124, 56, 130); color: white;">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#7c3882</span><input type="text" readonly="" value="#7c3882"></li>
+                     </ul>
+                  </div>
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(199, 5, 80); color: white;">
+                        <h5 class="color-name">Pomegranate</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(255, 235, 243);">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ffebf3</span><input type="text" readonly="" value="#ffebf3"></li>
+                        <li class="" style="background: rgb(255, 189, 214);">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ffbdd6</span><input type="text" readonly="" value="#ffbdd6"></li>
+                        <li class="" style="background: rgb(255, 92, 154); color: white;">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ff5c9a</span><input type="text" readonly="" value="#ff5c9a"></li>
+                        <li class="" style="background: rgb(243, 17, 103); color: white;">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#f31167</span><input type="text" readonly="" value="#f31167"></li>
+                        <li class="" style="background: rgb(199, 5, 80); color: white;">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#c70550</span><input type="text" readonly="" value="#c70550"></li>
+                        <li class="" style="background: rgb(153, 0, 58); color: white;">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#99003a</span><input type="text" readonly="" value="#99003a"></li>
+                     </ul>
+                  </div>
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(225, 47, 47); color: white;">
+                        <h5 class="color-name">Fruit Punch</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(255, 238, 238);">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ffeeee</span><input type="text" readonly="" value="#ffeeee"></li>
+                        <li class="" style="background: rgb(255, 189, 189);">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ffbdbd</span><input type="text" readonly="" value="#ffbdbd"></li>
+                        <li class="" style="background: rgb(255, 126, 126);">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ff7e7e</span><input type="text" readonly="" value="#ff7e7e"></li>
+                        <li class="" style="background: rgb(255, 76, 76); color: white;">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ff4c4c</span><input type="text" readonly="" value="#ff4c4c"></li>
+                        <li class="" style="background: rgb(225, 47, 47); color: white;">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#e12f2f</span><input type="text" readonly="" value="#e12f2f"></li>
+                        <li class="" style="background: rgb(184, 40, 40); color: white;">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#b82828</span><input type="text" readonly="" value="#b82828"></li>
+                     </ul>
+                  </div>
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(140, 114, 102); color: white;">
+                        <h5 class="color-name">Root Beer</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(250, 243, 240);">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#faf3f0</span><input type="text" readonly="" value="#faf3f0"></li>
+                        <li class="" style="background: rgb(235, 215, 207);">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ebd7cf</span><input type="text" readonly="" value="#ebd7cf"></li>
+                        <li class="" style="background: rgb(220, 187, 173);">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#dcbbad</span><input type="text" readonly="" value="#dcbbad"></li>
+                        <li class="" style="background: rgb(186, 154, 140);">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ba9a8c</span><input type="text" readonly="" value="#ba9a8c"></li>
+                        <li class="" style="background: rgb(140, 114, 102); color: white;">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#8c7266</span><input type="text" readonly="" value="#8c7266"></li>
+                        <li class="" style="background: rgb(102, 77, 66); color: white;">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#664d42</span><input type="text" readonly="" value="#664d42"></li>
+                     </ul>
+                  </div>
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(179, 127, 16); color: white;">
+                        <h5 class="color-name">Toasted Marshmallow</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(253, 246, 230);">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#fdf6e6</span><input type="text" readonly="" value="#fdf6e6"></li>
+                        <li class="" style="background: rgb(235, 214, 169);">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ebd6a9</span><input type="text" readonly="" value="#ebd6a9"></li>
+                        <li class="" style="background: rgb(230, 191, 108);">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#e6bf6c</span><input type="text" readonly="" value="#e6bf6c"></li>
+                        <li class="" style="background: rgb(204, 158, 59);">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#cc9e3b</span><input type="text" readonly="" value="#cc9e3b"></li>
+                        <li class="" style="background: rgb(179, 127, 16); color: white;">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#b37f10</span><input type="text" readonly="" value="#b37f10"></li>
+                        <li class="" style="background: rgb(140, 96, 0); color: white;">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#8c6000</span><input type="text" readonly="" value="#8c6000"></li>
+                     </ul>
+                  </div>
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(158, 149, 149);">
+                        <h5 class="color-name">Coconut</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(240, 238, 238);">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#f0eeee</span><input type="text" readonly="" value="#f0eeee"></li>
+                        <li class="" style="background: rgb(227, 223, 223);">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#e3dfdf</span><input type="text" readonly="" value="#e3dfdf"></li>
+                        <li class="" style="background: rgb(209, 203, 204);">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#d1cbcc</span><input type="text" readonly="" value="#d1cbcc"></li>
+                        <li class="" style="background: rgb(179, 172, 172);">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#b3acac</span><input type="text" readonly="" value="#b3acac"></li>
+                        <li class="" style="background: rgb(158, 149, 149);">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#9e9595</span><input type="text" readonly="" value="#9e9595"></li>
+                        <li class="" style="background: rgb(143, 134, 135); color: white;">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#8f8687</span><input type="text" readonly="" value="#8f8687"></li>
+                     </ul>
+                  </div>
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(53, 47, 47); color: white;">
+                        <h5 class="color-name">Cappuccino</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(122, 115, 116); color: white;">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#7a7374</span><input type="text" readonly="" value="#7a7374"></li>
+                        <li class="" style="background: rgb(112, 104, 105); color: white;">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#706869</span><input type="text" readonly="" value="#706869"></li>
+                        <li class="" style="background: rgb(94, 87, 87); color: white;">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#5e5757</span><input type="text" readonly="" value="#5e5757"></li>
+                        <li class="" style="background: rgb(74, 66, 66); color: white;">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#4a4242</span><input type="text" readonly="" value="#4a4242"></li>
+                        <li class="" style="background: rgb(53, 47, 47); color: white;">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#352f2f</span><input type="text" readonly="" value="#352f2f"></li>
+                        <li class="" style="background: rgb(35, 31, 32); color: white;">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#231f20</span><input type="text" readonly="" value="#231f20"></li>
+                     </ul>
+                  </div>
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(206, 211, 217);">
+                        <h5 class="color-name">Soap</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(246, 247, 248);">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#f6f7f8</span><input type="text" readonly="" value="#f6f7f8"></li>
+                        <li class="" style="background: rgb(240, 241, 242);">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#f0f1f2</span><input type="text" readonly="" value="#f0f1f2"></li>
+                        <li class="" style="background: rgb(232, 235, 237);">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#e8ebed</span><input type="text" readonly="" value="#e8ebed"></li>
+                        <li class="" style="background: rgb(223, 226, 230);">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#dfe2e6</span><input type="text" readonly="" value="#dfe2e6"></li>
+                        <li class="" style="background: rgb(206, 211, 217);">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ced3d9</span><input type="text" readonly="" value="#ced3d9"></li>
+                        <li class="" style="background: rgb(185, 192, 199);">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#b9c0c7</span><input type="text" readonly="" value="#b9c0c7"></li>
+                     </ul>
+                  </div>
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(51, 61, 71); color: white;">
+                        <h5 class="color-name">Licorice</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(161, 170, 179);">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#a1aab3</span><input type="text" readonly="" value="#a1aab3"></li>
+                        <li class="" style="background: rgb(123, 133, 143); color: white;">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#7b858f</span><input type="text" readonly="" value="#7b858f"></li>
+                        <li class="" style="background: rgb(94, 106, 117); color: white;">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#5e6a75</span><input type="text" readonly="" value="#5e6a75"></li>
+                        <li class="" style="background: rgb(74, 85, 97); color: white;">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#4a5561</span><input type="text" readonly="" value="#4a5561"></li>
+                        <li class="" style="background: rgb(51, 61, 71); color: white;">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#333d47</span><input type="text" readonly="" value="#333d47"></li>
+                        <li class="" style="background: rgb(31, 38, 46); color: white;">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#1f262e</span><input type="text" readonly="" value="#1f262e"></li>
+                     </ul>
+                  </div>
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(166, 166, 166);">
+                        <h5 class="color-name">French Vanilla</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(255, 255, 255);">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ffffff</span><input type="text" readonly="" value="#ffffff"></li>
+                        <li class="" style="background: rgb(235, 235, 235);">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#ebebeb</span><input type="text" readonly="" value="#ebebeb"></li>
+                        <li class="" style="background: rgb(212, 212, 212);">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#d4d4d4</span><input type="text" readonly="" value="#d4d4d4"></li>
+                        <li class="" style="background: rgb(189, 189, 189);">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#bdbdbd</span><input type="text" readonly="" value="#bdbdbd"></li>
+                        <li class="" style="background: rgb(166, 166, 166);">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#a6a6a6</span><input type="text" readonly="" value="#a6a6a6"></li>
+                        <li class="" style="background: rgb(143, 143, 143); color: white;">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#8f8f8f</span><input type="text" readonly="" value="#8f8f8f"></li>
+                     </ul>
+                  </div>
+                  <div class="color-swatch color-extended">
+                     <div class="primary" style="background: rgb(30, 30, 30); color: white;">
+                        <h5 class="color-name">Black Pepper</h5>
+                        <span class="weight">500</span>
+                     </div>
+                     <ul>
+                        <li class="" style="background: rgb(120, 120, 120); color: white;">100<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#787878</span><input type="text" readonly="" value="#787878"></li>
+                        <li class="" style="background: rgb(97, 97, 97); color: white;">200<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#616161</span><input type="text" readonly="" value="#616161"></li>
+                        <li class="" style="background: rgb(73, 73, 73); color: white;">300<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#494949</span><input type="text" readonly="" value="#494949"></li>
+                        <li class="" style="background: rgb(51, 51, 51); color: white;">400<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#333333</span><input type="text" readonly="" value="#333333"></li>
+                        <li class="" style="background: rgb(30, 30, 30); color: white;">500<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#1e1e1e</span><input type="text" readonly="" value="#1e1e1e"></li>
+                        <li class="" style="background: rgb(0, 0, 0); color: white;">600<span id="myInput" class="copy-message">Copy</span><span id='display' onClick='copyText(this)' class="hex">#000000</span><input type="text" readonly="" value="#000000"></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+    </div>
+    <script>
+        function copyText(element) {
+            var range, selection, worked;
+
+            if (document.body.createTextRange) {
+                range = document.body.createTextRange();
+                range.moveToElementText(element);
+                range.select();
+            } else if (window.getSelection) {
+                selection = window.getSelection();        
+                range = document.createRange();
+                range.selectNodeContents(element);
+                selection.removeAllRanges();
+                selection.addRange(range);
+            }
+            
+            try {
+                document.execCommand('copy');
+                console.log(document.execCommand('copy'));
+                alert('text copied');
+            }
+            catch (err) {
+                alert('unable to copy text');
+            }
+        }
+       
+    </script>
+    <!-- <script type="text/javascript" src="js/main.js"></script> -->
+</body>
+</html>
